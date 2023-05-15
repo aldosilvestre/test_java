@@ -16,12 +16,12 @@ public class AppExceptionHandler {
 
     private Logger logger = LoggerFactory.getLogger(AppExceptionHandler.class);
 
-    @ExceptionHandler({WebClientResponseException.BadRequest.class})
-    public String handleBadRequestException(WebClientResponseException exception){
-        logger.error("<< BAD REQUEST >>");
-        logger.error(exception.getLocalizedMessage(), exception);
-        return exception.getMessage();
-    }
+//    @ExceptionHandler({WebClientResponseException.BadRequest.class})
+//    public String handleBadRequestException(WebClientResponseException exception){
+//        logger.error("<< BAD REQUEST >>");
+//        logger.error(exception.getLocalizedMessage(), exception);
+//        return exception.getMessage();
+//    }
 
     @ExceptionHandler({ Exception.class})
     public String handleUncontrollerException(Exception exception){

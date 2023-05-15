@@ -1,4 +1,4 @@
-package ar.com.java.test.configuration;
+package ar.com.java.test.transacction.infraestructure.configuration;
 
 import com.google.common.net.HttpHeaders;
 import org.springframework.beans.factory.annotation.Value;
@@ -13,6 +13,9 @@ public class CoreConfiguration {
 
     @Bean
     public WebClient webClient(){
-        return WebClient.builder().defaultHeader(HttpHeaders.AUTHORIZATION, apiKey).build();
+        return WebClient
+            .builder()
+            .defaultHeader(HttpHeaders.AUTHORIZATION, apiKey)
+            .build();
     }
 }

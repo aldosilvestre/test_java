@@ -1,0 +1,23 @@
+version: '3'
+services:
+  rabbitmq:
+    container_name: rabbitmq
+    image: rabbitmq:3.11-management
+    ports:
+      - 5672:5672
+      - 15672:15672
+    volumes:
+      - rabbitmq:/var/lib/rabbitmq
+  mysql:
+    container_name: mysql
+    image: mysql:8.0.31
+    ports:
+      - 3306:3306
+    volumes:
+      - mysql:/var/lib/mysql
+    hostname: localhost
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+volumes:
+  mysql:
+  rabbitmq:
