@@ -33,7 +33,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-amqp'
 
     // esto lo agrego para facilitarme un poco el codigo
-    implementation 'org.projectlombok:lombok'
+    //implementation 'org.projectlombok:lombok'
 
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }

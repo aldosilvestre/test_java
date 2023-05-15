@@ -1,11 +1,7 @@
 package ar.com.java.test.transacction.domain;
 
-import lombok.Getter;
-import lombok.Setter;
-
 import java.io.Serializable;
 
-@Getter @Setter
 public class Account implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -17,4 +13,19 @@ public class Account implements Serializable {
         this.cbu = cbu;
     }
 
+    public String getAlias() {
+        return alias;
+    }
+
+    public void setAlias(String alias) {
+        this.alias = alias;
+    }
+
+    public String getCbu() {
+        return cbu;
+    }
+
+    public void setCbu(String cbu) {
+        this.cbu = cbu;
+    }
 }

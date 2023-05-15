@@ -10,15 +10,16 @@ public class Transfer {
     private Float amount;
     private String concept;
 
-    public Account getSource(){
-        return this.source;
-    }
-    public Account getDestiny(){
-        return this.destiny;
+    public Account getSource() {
+        return source;
     }
 
     public void setSource(Account source) {
         this.source = source;
+    }
+
+    public Account getDestiny() {
+        return destiny;
     }
 
     public void setDestiny(Account destiny) {
